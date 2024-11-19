@@ -1,0 +1,24 @@
+workshop-website/
+├── .gitignore
+├── README.md
+├── index.html
+├── assets/
+│   ├── css/
+│   │   └── styles.css
+│   ├── js/
+│   │   └── main.js
+│   └── images/
+│       └── .gitkeep
+├── _config.yml
+├── docs/
+│   ├── setup.md
+│   └── resources.md
+├── content/
+│   ├── exercises/
+│   │   └── .gitkeep
+│   ├── slides/
+│   │   └── .gitkeep
+│   └── examples/
+│       └── .gitkeep
+└── src/
+    └── .gitkeep 
