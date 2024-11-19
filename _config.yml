@@ -1,7 +1,0 @@
-title: Workshop Name
-description: Description of your workshop
-baseurl: ""
-url: ""
-
-# Build settings
-markdown: kramdown 
