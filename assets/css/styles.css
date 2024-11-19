@@ -1,0 +1,18 @@
+/* Add these styles for the language switch */
+.language-switch {
+    margin-left: 1em;
+}
+
+.language-switch a {
+    padding: 0.5em 1em;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.language-switch a:hover {
+    background-color: #ffffff;
+    color: #2e3842;
+} 
