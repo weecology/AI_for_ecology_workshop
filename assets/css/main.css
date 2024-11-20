@@ -2105,7 +2105,7 @@ button,
         line-height: 5em;
         position: absolute;
         right: -0.5em;
-        top: 0; } }
+        top: 0; } } 
 
 /* Banner */
 #banner {
@@ -2271,3 +2271,117 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+
+.content-with-image {
+    position: relative;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.header-image {
+    float: right;
+    margin: 0 0 20px 20px;
+    width: 200px;  /* Adjust size as needed */
+}
+
+.header-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Clear the float after the content */
+.content-with-image::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.featured-image {
+    width: 300px;
+    margin: 2em auto;
+    text-align: center;
+}
+
+.featured-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.flex-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 2em;
+    margin: 2em 0;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.featured-image {
+    width: 300px;
+    flex-shrink: 0;
+}
+
+.featured-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+@media screen and (max-width: 736px) {
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .featured-image {
+        order: -1;
+        margin-bottom: 1em;
+    }
+}
+
+.banner-image {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 2em;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+}
+
+.content-section {
+    margin-top: 2em;
+}
+
+.apply-button-container {
+    text-align: center;
+    margin: 3em 0;
+    padding: 2em;
+    background: rgba(0,0,0,0.03);
+    border-radius: 5px;
+}
+
+.apply-button {
+    font-size: 1.25em;
+    padding: 1em 2em !important;
+    margin-bottom: 1em;
+}
+
+.apply-note {
+    font-style: italic;
+    color: #666;
+    margin: 0;
+}
