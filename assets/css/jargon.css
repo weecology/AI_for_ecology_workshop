@@ -1,82 +1,117 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
     line-height: 1.6;
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 20px;
     background: #f5f5f5;
 }
 
 .jargon-header {
-    background: #fff;
-    padding: 2rem;
-    border-radius: 8px;
-    margin-bottom: 2rem;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+    margin-bottom: 3em;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .jargon-header h1 {
-    color: #2c3e50;
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
+    color: #333;
 }
 
 .explanation {
+    font-size: 1.1em;
+    line-height: 1.6;
     color: #666;
-    font-size: 1.1rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.explanation.spanish {
+    margin-top: 1.5em;
+    padding-top: 1.5em;
+    border-top: 1px solid #eee;
+    font-style: italic;
+    color: #555;
 }
 
 .two-column {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 2rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 3em;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+.column {
+    flex: 1;
+    min-width: 0;
+    max-width: 800px;
 }
 
 .section {
+    margin-bottom: 2.5em;
     background: #fff;
     border-radius: 8px;
-    margin-bottom: 2rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     overflow: hidden;
+    width: 100%;
 }
 
 /* Section headers */
 .section-header {
-    padding: 1rem;
-    color: white !important;
+    padding: 1em;
     font-weight: bold;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    margin: 0;
+    gap: 0.3em;
+}
+
+.section-header span:first-child {
+    font-size: 1.1em;
+}
+
+.section-header span:last-child {
+    font-size: 0.9em;
+    opacity: 0.8;
 }
 
 /* Section header backgrounds */
-.section-header.ml-core {
-    background-color: #3498db !important;
+.ml-core {
+    background-color: #e3f2fd;
+    color: #1565c0;
 }
 
-.section-header.ml-terminology {
-    background-color: #2ecc71 !important;
+.ml-terminology {
+    background-color: #f3e5f5;
+    color: #7b1fa2;
 }
 
-.section-header.cv-basics {
-    background-color: #e74c3c !important;
+.cv-basics {
+    background-color: #e8f5e9;
+    color: #2e7d32;
 }
 
-.section-header.metrics {
-    background-color: #f1c40f !important;
+.metrics {
+    background-color: #fff3e0;
+    color: #ef6c00;
 }
 
-.section-header.annotation {
-    background-color: #9b59b6 !important;
+.annotation {
+    background-color: #fce4ec;
+    color: #c2185b;
 }
 
-.section-header.user-terms {
-    background-color: #1abc9c !important;
+.user-terms {
+    background-color: #e0f7fa;
+    color: #00838f;
 }
 
-.section-header.privacy {
-    background-color: #e67e22 !important;
+.privacy {
+    background-color: #f1f8e9;
+    color: #558b2f;
 }
 
 /* Topic-specific heading colors */
@@ -111,38 +146,69 @@ body {
 table {
     width: 100%;
     border-collapse: collapse;
-}
-
-tr {
-    border-bottom: 1px solid #eee;
-}
-
-tr:last-child {
-    border-bottom: none;
+    margin: 0;
 }
 
 td {
-    padding: 1rem;
+    padding: 0.8em 1em;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
 }
 
-.term {
+td.term {
     font-weight: bold;
+    color: #333;
     width: 25%;
 }
 
-.spanish {
+td.spanish {
     color: #666;
     width: 25%;
     font-style: italic;
 }
 
-.definition {
+td.definition {
     color: #444;
     width: 50%;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 1400px) {
     .two-column {
-        grid-template-columns: 1fr;
+        gap: 2em;
+        padding: 0 1.5em;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .two-column {
+        flex-direction: column;
+        padding: 0 1em;
+    }
+    
+    .column {
+        width: 100%;
+        max-width: none;
+    }
+    
+    td.term, td.spanish, td.definition {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    .jargon-header {
+        padding: 0 1em;
+    }
+    
+    .explanation {
+        font-size: 1em;
+    }
+    
+    .section-header {
+        padding: 0.8em;
+    }
+    
+    td {
+        padding: 0.6em 0.8em;
     }
 } 
