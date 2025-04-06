@@ -1,0 +1,148 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f5f5f5;
+}
+
+.jargon-header {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.jargon-header h1 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.explanation {
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.two-column {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.section {
+    background: #fff;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* Section headers */
+.section-header {
+    padding: 1rem;
+    color: white !important;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 0;
+}
+
+/* Section header backgrounds */
+.section-header.ml-core {
+    background-color: #3498db !important;
+}
+
+.section-header.ml-terminology {
+    background-color: #2ecc71 !important;
+}
+
+.section-header.cv-basics {
+    background-color: #e74c3c !important;
+}
+
+.section-header.metrics {
+    background-color: #f1c40f !important;
+}
+
+.section-header.annotation {
+    background-color: #9b59b6 !important;
+}
+
+.section-header.user-terms {
+    background-color: #1abc9c !important;
+}
+
+.section-header.privacy {
+    background-color: #e67e22 !important;
+}
+
+/* Topic-specific heading colors */
+.section.ml-core .term {
+    color: #2980b9 !important;
+}
+
+.section.ml-terminology .term {
+    color: #27ae60 !important;
+}
+
+.section.cv-basics .term {
+    color: #c0392b !important;
+}
+
+.section.metrics .term {
+    color: #f39c12 !important;
+}
+
+.section.annotation .term {
+    color: #8e44ad !important;
+}
+
+.section.user-terms .term {
+    color: #16a085 !important;
+}
+
+.section.privacy .term {
+    color: #d35400 !important;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid #eee;
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+td {
+    padding: 1rem;
+}
+
+.term {
+    font-weight: bold;
+    width: 25%;
+}
+
+.spanish {
+    color: #666;
+    width: 25%;
+    font-style: italic;
+}
+
+.definition {
+    color: #444;
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .two-column {
+        grid-template-columns: 1fr;
+    }
+} 
