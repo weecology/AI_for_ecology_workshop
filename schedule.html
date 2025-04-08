@@ -1,0 +1,319 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Programa del Taller - IA para el Monitoreo Ecológico</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			.schedule-table {
+				width: 100%;
+				border-collapse: collapse;
+				margin-bottom: 2em;
+			}
+			.schedule-table th, .schedule-table td {
+				padding: 0.75em;
+				border: 1px solid #ddd;
+				text-align: left;
+			}
+			.schedule-table th {
+				background-color: #f5f5f5;
+			}
+			.day-1 {
+				background-color: rgba(255, 200, 200, 0.3);
+			}
+			.day-2 {
+				background-color: rgba(200, 255, 200, 0.3);
+			}
+			.day-3 {
+				background-color: rgba(200, 200, 255, 0.3);
+			}
+			.day-4 {
+				background-color: rgba(255, 255, 200, 0.3);
+			}
+			.theme {
+				font-weight: bold;
+			}
+			.legend {
+				display: flex;
+				flex-wrap: wrap;
+				margin-bottom: 1em;
+			}
+			.legend-item {
+				display: flex;
+				align-items: center;
+				margin-right: 1.5em;
+				margin-bottom: 0.5em;
+			}
+			.legend-color {
+				width: 20px;
+				height: 20px;
+				margin-right: 0.5em;
+				border: 1px solid #ddd;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<!-- Header -->
+								<header id="header">
+									<h1>Programa del Taller</h1>
+									<p>Horario detallado de actividades</p>
+								</header>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Horario del Taller</h2>
+									</header>
+									<p>El taller se llevará a cabo del 21 al 24 de abril de 2025 en la Universidad de Antioquia Sede de Posgrado, Medellín, Colombia.</p>
+									
+									<div class="legend">
+										<div class="legend-item">
+											<div class="legend-color day-1"></div>
+											<span>21 de abril - Aprendizaje Automático para Biodiversidad</span>
+										</div>
+										<div class="legend-item">
+											<div class="legend-color day-2"></div>
+											<span>22 de abril - Cámaras Trampa</span>
+										</div>
+										<div class="legend-item">
+											<div class="legend-color day-3"></div>
+											<span>23 de abril - Bioacústica</span>
+										</div>
+										<div class="legend-item">
+											<div class="legend-color day-4"></div>
+											<span>24 de abril - Datos Aéreos</span>
+										</div>
+									</div>
+									
+									<table class="schedule-table">
+										<thead>
+											<tr>
+												<th>Hora</th>
+												<th>21 de abril<br>Aprendizaje Automático</th>
+												<th>22 de abril<br>Cámaras Trampa</th>
+												<th>23 de abril<br>Bioacústica</th>
+												<th>24 de abril<br>Datos Aéreos</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>9:00</td>
+												<td class="day-1">Objetivos del Taller</td>
+												<td class="day-2">Datos en el campo</td>
+												<td class="day-3">Datos en el campo</td>
+												<td class="day-4">Datos en el campo</td>
+											</tr>
+											<tr>
+												<td>9:30</td>
+												<td class="day-1">Aprendizaje Automático Moderno</td>
+												<td class="day-2">Problemas comunes</td>
+												<td class="day-3">Problemas comunes</td>
+												<td class="day-4">Problemas comunes</td>
+											</tr>
+											<tr>
+												<td>10:00</td>
+												<td class="day-1">Aprendizaje Automático Moderno</td>
+												<td class="day-2">Git y Github</td>
+												<td class="day-3">Open Soundscape</td>
+												<td class="day-4">DeepForest</td>
+											</tr>
+											<tr>
+												<td>10:30</td>
+												<td class="day-1">Grupos por tipo de datos</td>
+												<td class="day-2">Pytorch Wildlife</td>
+												<td class="day-3">Open Soundscape</td>
+												<td class="day-4">DeepForest</td>
+											</tr>
+											<tr>
+												<td>11:00</td>
+												<td class="day-1">Grupos por tipo de datos</td>
+												<td class="day-2">Pytorch Wildlife</td>
+												<td class="day-3">Charlas de contribución</td>
+												<td class="day-4">DeepForest</td>
+											</tr>
+											<tr>
+												<td>11:30</td>
+												<td class="day-1">Python y co-pilot</td>
+												<td class="day-2">Pytorch Wildlife</td>
+												<td class="day-3">Charlas de contribución</td>
+												<td class="day-4">Charlas de contribución</td>
+											</tr>
+											<tr>
+												<td>12:00</td>
+												<td class="day-1">Desafío de colaboración</td>
+												<td class="day-2">Pytorch Wildlife</td>
+												<td class="day-3">Desafío de colaboración</td>
+												<td class="day-4">Almuerzo - Desafío de colaboración</td>
+											</tr>
+											<tr>
+												<td>12:30</td>
+												<td class="day-1">Almuerzo</td>
+												<td class="day-2">Desafío de colaboración</td>
+												<td class="day-3">Almuerzo</td>
+												<td class="day-4">Almuerzo</td>
+											</tr>
+											<tr>
+												<td>13:00</td>
+												<td class="day-1">Almuerzo</td>
+												<td class="day-2">Almuerzo</td>
+												<td class="day-3">Almuerzo</td>
+												<td class="day-4">Almuerzo</td>
+											</tr>
+											<tr>
+												<td>13:30</td>
+												<td class="day-1">Python y co-pilot</td>
+												<td class="day-2">Almuerzo</td>
+												<td class="day-3">Fine-tuning</td>
+												<td class="day-4">Anotación</td>
+											</tr>
+											<tr>
+												<td>14:00</td>
+												<td class="day-1">Charlas de contribución</td>
+												<td class="day-2">Usar co-pilot para limpiar datos</td>
+												<td class="day-3">Fine-tuning</td>
+												<td class="day-4">Anotación</td>
+											</tr>
+											<tr>
+												<td>14:30</td>
+												<td class="day-1">Pytorch Wildlife</td>
+												<td class="day-2">Megadetector</td>
+												<td class="day-3">Fine-tuning</td>
+												<td class="day-4">Fine-tuning</td>
+											</tr>
+											<tr>
+												<td>15:00</td>
+												<td class="day-1">Pytorch Wildlife</td>
+												<td class="day-2">Megadetector</td>
+												<td class="day-3">Charlas de contribución</td>
+												<td class="day-4">Fine-tuning</td>
+											</tr>
+											<tr>
+												<td>15:30</td>
+												<td class="day-1">Pytorch Wildlife</td>
+												<td class="day-2">SpeciesNet</td>
+												<td class="day-3">Charlas de contribución</td>
+												<td class="day-4">cometML</td>
+											</tr>
+											<tr>
+												<td>16:00</td>
+												<td class="day-1">Pytorch Wildlife</td>
+												<td class="day-2">Charlas de contribución</td>
+												<td class="day-3">Anotación</td>
+												<td class="day-4">Sesión de grupos</td>
+											</tr>
+											<tr>
+												<td>16:30</td>
+												<td class="day-1">Anotación</td>
+												<td class="day-2">Charlas de contribución</td>
+												<td class="day-3">Anotación</td>
+												<td class="day-4">Preguntas y respuestas</td>
+											</tr>
+										</tbody>
+									</table>
+									
+									<p>Este horario está sujeto a cambios. Para la versión más actualizada, consulta el <a href="https://docs.google.com/spreadsheets/d/1g6agz_UFGK6kxMJSk_8zdsMPN5VO6-3yftsQx23CgQ4/edit?usp=sharing" target="_blank">documento de Google Sheets</a>.</p>
+								</section>
+								
+								<section>
+									<header class="major">
+										<h2>Temas Principales</h2>
+									</header>
+									<div class="features">
+										<article>
+											<span class="icon fa-gem"></span>
+											<div class="content">
+												<h3>Aprendizaje Automático</h3>
+												<p>Fundamentos de aprendizaje automático moderno y su aplicación en ecología.</p>
+											</div>
+										</article>
+										<article>
+											<span class="icon solid fa-camera"></span>
+											<div class="content">
+												<h3>Cámaras Trampa</h3>
+												<p>Procesamiento y análisis de imágenes de cámaras trampa usando técnicas de visión por computadora.</p>
+											</div>
+										</article>
+										<article>
+											<span class="icon solid fa-microphone"></span>
+											<div class="content">
+												<h3>Bioacústica</h3>
+												<p>Análisis de grabaciones acústicas para monitorear la biodiversidad.</p>
+											</div>
+										</article>
+										<article>
+											<span class="icon solid fa-plane"></span>
+											<div class="content">
+												<h3>Datos Aéreos</h3>
+												<p>Procesamiento de imágenes aéreas y datos de sensores remotos para estudios ecológicos.</p>
+											</div>
+										</article>
+									</div>
+								</section>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Inicio</a></li>
+										<li><a href="aplicar.html">Aplicar</a></li>
+										<li>
+											<span class="opener">Materiales del curso</span>
+											<ul>
+												<li><a href="jargon.html">Glosario</a></li>
+												<li><a href="bioacoustic.html">Bioacústica</a></li>
+												<li><a href="camera_trap.html">Cámaras Trampa</a></li>
+												<li><a href="airborne.html">Datos Aéreos</a></li>
+											</ul>
+										</li>
+										<li><a href="readings.html">Lecturas Sugeridas</a></li>
+										<li><a href="schedule.html">Programa</a></li>
+										<li><a href="#">FAQ</a></li>
+									</ul>
+								</nav>
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Contacto</h2>
+									</header>
+									<p>Este taller está organizado por el Laboratorio de Weecology de la Universidad de Florida, la Universidad de Antioquia y la Universidad Nacional de Colombia.</p>
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="#">ben.weinstein@weecology.org</a></li>
+									</ul>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html> 
