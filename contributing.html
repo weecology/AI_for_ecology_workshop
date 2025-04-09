@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Contribuir - IA para el Monitoreo Ecológico</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<h1>Cómo Contribuir</h1>
+									<p>Guía para contribuir al sitio web del taller</p>
+								</header>
+
+							<!-- Content -->
+								<section>
+									<header class="main">
+										<h2>Pasos para Contribuir</h2>
+									</header>
+
+									<h3>1. Configuración Inicial</h3>
+									<p>Primero, necesitarás configurar tu entorno local:</p>
+									<pre><code>
+# Instalar Git si aún no lo tienes
+# Windows: https://git-scm.com/download/win
+# Mac: brew install git
+# Linux: sudo apt-get install git
+
+# Configurar Git con tu información
+git config --global user.name "Tu Nombre"
+git config --global user.email "tu.email@ejemplo.com"
+									</code></pre>
+
+									<h3>2. Clonar el Repositorio</h3>
+									<p>Copia el repositorio a tu computadora local:</p>
+									<pre><code>
+# Clonar el repositorio
+git clone https://github.com/weecology/AI_for_ecology_workshop.git
+cd AI_for_ecology_workshop
+									</code></pre>
+
+									<h3>3. Crear una Nueva Rama</h3>
+									<p>Crea una rama nueva para tus cambios:</p>
+									<pre><code>
+# Asegúrate de estar en la rama principal
+git checkout main
+
+# Actualiza tu copia local
+git pull origin main
+
+# Crea una nueva rama para tus cambios
+git checkout -b nombre-de-tu-rama
+									</code></pre>
+
+									<h3>4. Realizar Cambios</h3>
+									<p>Realiza los cambios necesarios en los archivos. Algunos ejemplos comunes:</p>
+									<ul>
+										<li>Corregir errores tipográficos en el contenido</li>
+										<li>Actualizar o añadir nuevos recursos</li>
+										<li>Mejorar la documentación</li>
+										<li>Añadir nuevas funcionalidades</li>
+									</ul>
+
+									<h3>5. Confirmar tus Cambios</h3>
+									<p>Guarda tus cambios en Git:</p>
+									<pre><code>
+# Ver qué archivos has modificado
+git status
+
+# Añadir los archivos modificados
+git add .
+
+# Confirmar los cambios con un mensaje descriptivo
+git commit -m "Descripción breve de tus cambios"
+									</code></pre>
+
+									<h3>6. Subir los Cambios</h3>
+									<p>Sube tus cambios a GitHub:</p>
+									<pre><code>
+# Subir tu rama al repositorio remoto
+git push origin nombre-de-tu-rama
+									</code></pre>
+
+									<h3>7. Crear un Pull Request</h3>
+									<p>Para proponer tus cambios al proyecto:</p>
+									<ol>
+										<li>Ve a la página del repositorio en GitHub</li>
+										<li>Haz clic en "Pull Requests"</li>
+										<li>Haz clic en "New Pull Request"</li>
+										<li>Selecciona tu rama en el menú desplegable</li>
+										<li>Revisa los cambios y haz clic en "Create Pull Request"</li>
+										<li>Añade un título descriptivo y explica tus cambios en detalle</li>
+										<li>Haz clic en "Create Pull Request"</li>
+									</ol>
+
+									<h3>Buenas Prácticas</h3>
+									<ul>
+										<li>Mantén tus cambios enfocados y relacionados</li>
+										<li>Escribe mensajes de commit claros y descriptivos</li>
+										<li>Actualiza tu rama con main regularmente</li>
+										<li>Prueba tus cambios antes de hacer el pull request</li>
+										<li>Responde a los comentarios y sugerencias en tu pull request</li>
+									</ul>
+
+									<h3>¿Necesitas Ayuda?</h3>
+									<p>Si tienes preguntas o necesitas ayuda:</p>
+									<ul>
+										<li>Revisa la documentación de GitHub sobre <a href="https://docs.github.com/es/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-a-pull-request">cómo crear un pull request</a></li>
+										<li>Abre un issue en el repositorio describiendo tu problema</li>
+										<li>Contacta a los mantenedores del proyecto</li>
+									</ul>
+								</section>
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Inicio</a></li>
+										<li><a href="aplicar.html">Aplicar</a></li>
+										<li>
+											<span class="opener">Materiales del curso</span>
+											<ul>
+												<li><a href="jargon.html">Glosario</a></li>
+												<li><a href="bioacoustic.html">Bioacústica</a></li>
+												<li><a href="camera_trap.html">Cámaras Trampa</a></li>
+												<li><a href="airborne.html">Datos Aéreos</a></li>
+											</ul>
+										</li>
+										<li><a href="readings.html">Lecturas Sugeridas</a></li>
+										<li><a href="schedule.html">Programa</a></li>
+										<li>
+											<span class="opener">Instructores</span>
+											<ul>
+												<li><a href="instructors.html">Todos los Instructores</a></li>
+												<li><a href="#">Dr. Ben Weinstein</a></li>
+												<li><a href="https://sites.google.com/view/juanluisparra/home">Dr. Juan Parra</a></li>
+												<li><a href="https://www.agci.org/people/003Nu000008DtACIA0/juan-sebastian-ulloa">Dr. Juan Sebastian Ulloa</a></li>
+												<li><a href="#">Santiago Guzman</a></li>
+												<li><a href="https://www.synapse.org/Profile:3447446">Dr. Jose Ruiz Munoz</a></li>
+											</ul>
+										</li>
+									</ul>
+								</nav>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Untitled. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html> 
