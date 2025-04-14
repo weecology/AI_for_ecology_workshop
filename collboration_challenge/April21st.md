@@ -33,6 +33,8 @@ Find a species, describe its call and drop an image here to practice your markdo
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/8eQrQX3ey5k?si=tbpjrGdH7Kqku0B5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+One fo the great dangers, which I have seen many times, is that machine learning peopel don't understand the needs and outputs for of the biology team. It happens all the time. No progress can be made unless your work is reproduciple, clean, and as simple as possible. At every step ask yourself, do I need to do this, what is the simplest thing I can do to achieve my aims. Do not get distracted by shiny things. 
+
 ## Questions
 
 How many classes in the taxonomy file?
