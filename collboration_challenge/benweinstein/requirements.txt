@@ -4,3 +4,9 @@ matplotlib
 seaborn
 folium
 pathlib
+opensoundscape
+git+https://github.com/kitzeslab/bioacoustics-model-zoo
+torch
+torchaudio
+torchvision
+transformers
