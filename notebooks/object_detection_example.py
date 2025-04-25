@@ -83,6 +83,18 @@ class ObjectDetectionModel(pl.LightningModule):
             self.log(f"train_{key}", value)
         return loss
 
+    def validation_step(self, batch, batch_idx):
+        images, targets = batch
+        loss_dict = self.model(images, targets)
+        loss = sum(loss for loss in loss_dict.values())
+        self.log("val_loss", loss)
+        for key, value in loss_dict.items():
+            self.log(f"val_{key}", value)
+        return loss
+    
+    def on_train_end(self):
+        print("I'm done training")
+    
     def configure_optimizers(self):
         # Optimizador
         return torch.optim.SGD(self.model.parameters(), lr=0.005, momentum=0.9, weight_decay=0.0005)
